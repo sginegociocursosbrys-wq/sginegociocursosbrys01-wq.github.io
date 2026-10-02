@@ -1,0 +1,6 @@
+Options -Indexes
+DirectoryIndex index.html
+<FilesMatch "^(config(\.example)?\.php|schema\.sql|README\.md|\.gitignore|\.gitlab-ci\.yml)$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/(.*/)?\.git

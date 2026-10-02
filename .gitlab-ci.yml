@@ -1,0 +1,4 @@
+verificar:
+  image: php:8.2-cli
+  script:
+    - find . -name '*.php' -print0 | xargs -0 -n1 php -l
